@@ -14,29 +14,36 @@
         }
 
         body {
-            background-color: var(--bg-dark);
+          body {
             color: var(--text-main);
-            font-family: 'Audiowide', cursive; /* Fuente futurista */
+            font-family: 'Audiowide', cursive;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            /* Fondo con patrón de cuadrícula digital ligero */
-            background-image: linear-gradient(0deg, transparent 24%, rgba(57, 197, 187, .05) 25%, rgba(57, 197, 187, .05) 26%, transparent 27%, transparent 74%, rgba(57, 197, 187, .05) 75%, rgba(57, 197, 187, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(57, 197, 187, .05) 25%, rgba(57, 197, 187, .05) 26%, transparent 27%, transparent 74%, rgba(57, 197, 187, .05) 75%, rgba(57, 197, 187, .05) 76%, transparent 77%, transparent);
-            background-size: 50px 50px;
+            /* Configuración del fondo con la imagen de Pinterest */
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('https://i.pinimg.com/1200x/33/f5/b3/33f5b3e2a2341cca7da80128bc94b393.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .card {
-            background: rgba(20, 20, 20, 0.95);
+            .card {
+            background: rgba(10, 10, 10, 0.85); /* Esto le da un fondo negro traslúcido a la tarjeta */
             border: 4px solid var(--miku-teal);
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 0 20px rgba(57, 197, 187, 0.5), inset 0 0 10px rgba(57, 197, 187, 0.2);
+            box-shadow: 0 0 30px rgba(57, 197, 187, 0.4);
             max-width: 380px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(5px); /* Esto hace un efecto de vidrio esmerilado muy moderno */
         }
 
         /* Detalle decorativo de los lazos de Miku */
@@ -144,7 +151,7 @@
         <div <img src="https://wallpaperaccess.com/full/659962.jpg" alt="Miku" style="max-width: 100%; height: auto; border-radius: 10px; margin: 15px 0; border: 2px solid var(--miku-teal); box-shadow: 0 0 10px var(--miku-teal);">
         
         <p>Estás invitado a la fiesta de cumpleaños de:</p>
-        <p style="font-size: 1.3rem; color: var(--miku-teal); font-weight: bold;">[TU NOMBRE AQUÍ]</p>
+        <p style="font-size: 1.3rem; color: var(--miku-teal); font-weight: bold;">[MARCELA]</p>
 
         <div class="details">
             <div><span class="icon">📅</span> <span>FECHA:</span>&nbsp; 21/03/2026</div>
