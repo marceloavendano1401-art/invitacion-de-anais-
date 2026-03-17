@@ -13,19 +13,18 @@
             --text-main: #ffffff;
         }
 
-        body {
-          body {
-            color: var(--text-main);
-            font-family: 'Audiowide', cursive;
+       body {
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-            /* Configuración del fondo con la imagen de Pinterest */
-            background-image: 
-                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
-                url('https://i.pinimg.com/1200x/33/f5/b3/33f5b3e2a2341cca7da80128bc94b393.jpg');
+            color: white;
+            font-family: 'Audiowide', cursive;
+            /* La clave está aquí: eliminamos los degradados anteriores */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://i.pinimg.com/1200x/33/f5/b3/33f5b3e2a2341cca7da80128bc94b393.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -151,7 +150,7 @@
         <div <img src="https://wallpaperaccess.com/full/659962.jpg" alt="Miku" style="max-width: 100%; height: auto; border-radius: 10px; margin: 15px 0; border: 2px solid var(--miku-teal); box-shadow: 0 0 10px var(--miku-teal);">
         
         <p>Estás invitado a la fiesta de cumpleaños de:</p>
-        <p style="font-size: 1.3rem; color: var(--miku-teal); font-weight: bold;">[MARCELA]</p>
+        <p style="font-size: 1.3rem; color: var(--miku-teal); font-weight: bold;">[Marcela]</p>
 
         <div class="details">
             <div><span class="icon">📅</span> <span>FECHA:</span>&nbsp; 21/03/2026</div>
