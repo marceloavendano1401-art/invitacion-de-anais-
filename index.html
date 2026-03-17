@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatsune Miku Special Event: Tu Cumple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --miku-teal: #39c5bb; /* El color icónico de Miku */
+            --miku-pink: #ff007f; /* Rosa de los lazos/detalles */
+            --bg-dark: #121212;
+            --text-main: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Audiowide', cursive; /* Fuente futurista */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /* Fondo con patrón de cuadrícula digital ligero */
+            background-image: linear-gradient(0deg, transparent 24%, rgba(57, 197, 187, .05) 25%, rgba(57, 197, 187, .05) 26%, transparent 27%, transparent 74%, rgba(57, 197, 187, .05) 75%, rgba(57, 197, 187, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(57, 197, 187, .05) 25%, rgba(57, 197, 187, .05) 26%, transparent 27%, transparent 74%, rgba(57, 197, 187, .05) 75%, rgba(57, 197, 187, .05) 76%, transparent 77%, transparent);
+            background-size: 50px 50px;
+        }
+
+        .card {
+            background: rgba(20, 20, 20, 0.95);
+            border: 4px solid var(--miku-teal);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(57, 197, 187, 0.5), inset 0 0 10px rgba(57, 197, 187, 0.2);
+            max-width: 380px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Detalle decorativo de los lazos de Miku */
+        .card::before, .card::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            width: 50px;
+            height: 20px;
+            background: var(--miku-pink);
+            border-radius: 5px;
+            box-shadow: 0 0 10px var(--miku-pink);
+        }
+        .card::before { left: 20px; transform: rotate(-15deg); }
+        .card::after { right: 20px; transform: rotate(15deg); }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive; /* Fuente pixelada para el título */
+            font-size: 1.2rem;
+            color: var(--miku-teal);
+            text-shadow: 2px 2px 0 var(--miku-pink);
+            margin-bottom: 5px;
+        }
+
+        .event-title {
+            font-size: 1.5rem;
+            color: var(--miku-pink);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .miku-icon {
+            font-size: 4rem;
+            margin: 10px 0;
+            color: var(--miku-teal);
+            text-shadow: 0 0 15px var(--miku-teal);
+        }
+
+        .details {
+            text-align: left;
+            margin: 25px 0;
+            line-height: 1.8;
+            border-left: 3px solid var(--miku-pink);
+            padding-left: 15px;
+        }
+
+        .details div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            color: var(--miku-teal);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: block;
+            background: transparent;
+            color: var(--miku-teal);
+            border: 2px solid var(--miku-teal);
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px; /* Bordes redondeados estilo Miku */
+            transition: 0.3s;
+            margin-top: 15px;
+            text-transform: uppercase;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7rem;
+        }
+
+        .btn:hover {
+            background: var(--miku-teal);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px var(--miku-teal);
+        }
+
+        .btn-rsvp {
+            border-color: var(--miku-pink);
+            color: var(--miku-pink);
+        }
+
+        .btn-rsvp:hover {
+            background: var(--miku-pink);
+            color: white;
+            box-shadow: 0 0 20px var(--miku-pink);
+        }
+
+        .footer {
+            font-size: 0.7rem;
+            margin-top: 25px;
+            opacity: 0.6;
+            color: var(--miku-teal);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>MIKU FES // B-DAY </h1>
+        <div class="event-title">¡CELEBREMOS JUNTOS!</div>
+        
+        <div class="miku-icon">♪ 01 ♪</div>
+        
+        <p>Estás invitado a la fiesta de cumpleaños de:</p>
+        <p style="font-size: 1.3rem; color: var(--miku-teal); font-weight: bold;">[TU NOMBRE AQUÍ]</p>
+
+        <div class="details">
+            <div><span class="icon">📅</span> <span>FECHA:</span>&nbsp; 15/10/2026</div>
+            <div><span class="icon">⏰</span> <span>HORA:</span>&nbsp; 20:00 HRS</div>
+            <div><span class="icon">📍</span> <span>LUGAR:</span>&nbsp; Conchalí</div>
+        </div>
+
+        <a href="URL_DE_GOOGLE_MAPS_AQUÍ" class="btn" target="_blank">📍 ABRIR MAPA</a>
+        <a href="https://wa.me/TU_NUMERO_DE_TELEFONO" class="btn btn-rsvp">📱 CONFIRMAR</a>
+
+        <div class="footer">
+            VOCALOID_PROTOCOL_INITV_01 // <span style="color:var(--miku-pink);">♥</span>
+        </div>
+    </div>
+</body>
+</html>
